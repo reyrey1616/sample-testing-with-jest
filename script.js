@@ -15,4 +15,6 @@ const googleSearch = (searchInput) => {
   return matches.length > 3 ? matches.slice(0, 3) : matches;
 };
 
-console.log(googleSearch('cat'));
+// console.log(googleSearch('cats'));
+
+module.exports = googleSearch;
