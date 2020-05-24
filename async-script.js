@@ -18,11 +18,13 @@ const getPeople = async (fetch) => {
   const getRequest = await fetch('https://swapi.dev/api/people');
   const data = await getRequest.json();
   const { count, results } = data;
-  console.log(data);
   return {
     count,
     results,
   };
 };
 
-getPeople(fetch);
+module.exports = {
+  getPeople,
+  getPeoplePromise,
+};

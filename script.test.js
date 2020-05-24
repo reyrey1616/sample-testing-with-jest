@@ -1,5 +1,6 @@
 const googleSearch = require('./script');
 
+// Mocking Database
 const dbMock = ['dog.com', 'cheesepuff.com', 'disney.com', 'dogpictures.com'];
 
 describe('GOOGLE_SEARCH', () => {
